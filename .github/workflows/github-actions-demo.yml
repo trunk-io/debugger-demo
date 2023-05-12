@@ -15,9 +15,8 @@ jobs:
         run: curl https://get.trunk.io -fsSL | bash
 
       - name: Testing
-        run: trunk breakpoint --id="Demo" -- bash ./test.sh
-        env:
-          TRUNK_GITHUB_CONTEXT: ${{ toJSON(github) }}
-          INPUT_TRUNK_TOKEN: ${{ secrets.INPUT_TRUNK_TOKEN }}
-          SHELL: bash
-          GH_TOKEN: ${{ github.token }}
+        uses: trunk-io/breakpoint@v1
+        with:
+          breakpoint_id: Demo
+          command: bash ./test.sh
+          trunk_token: ${{ secrets.INPUT_TRUNK_TOKEN }}
