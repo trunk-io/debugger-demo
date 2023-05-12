@@ -1,0 +1,23 @@
+name: Pull Request
+on:
+  pull_request:
+  workflow_call:
+  workflow_dispatch:
+  push:
+
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: testing
+        run: trunk breakpoint --id="Demo" -- ./test.sh
+        env:
+          TRUNK_GITHUB_CONTEXT: ${{ toJSON(github) }}
+          INPUT_TRUNK_TOKEN: ${{ secrets.INPUT_TRUNK_TOKEN }}
+          SHELL: bash
+          GH_TOKEN: ${{ github.token }}
