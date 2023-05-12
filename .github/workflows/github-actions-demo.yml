@@ -15,7 +15,7 @@ jobs:
         run: echo "tools" >> $GITHUB_PATH
 
       - name: testing
-        run: trunk breakpoint --id="Demo" --debug -- bash ./test.sh
+        run: trunk breakpoint --id="Demo" -- bash ./test.sh
         env:
           TRUNK_GITHUB_CONTEXT: ${{ toJSON(github) }}
           INPUT_TRUNK_TOKEN: ${{ secrets.INPUT_TRUNK_TOKEN }}
