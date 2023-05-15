@@ -18,5 +18,5 @@ jobs:
         uses: trunk-io/breakpoint@v1
         with:
           breakpoint_id: Demo
-          command: bash ./test.sh
+          command: ./test.sh # run the script
           trunk_token: ${{ secrets.INPUT_TRUNK_TOKEN }}
