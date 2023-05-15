@@ -17,6 +17,6 @@ jobs:
       - name: Testing
         uses: trunk-io/breakpoint@v1
         with:
-          breakpoint_id: Demo
-          command: ./test.sh # run the script
+          breakpoint_id: unit-tests
+          command: ./run_tests.sh
           trunk_token: ${{ secrets.INPUT_TRUNK_TOKEN }}
