@@ -13,6 +13,8 @@ jobs:
 
       - name: Install Trunk
         run: curl https://get.trunk.io -fsSL | bash
+        env:
+          TRUNK_LAUNCHER_QUIET: 1
 
       - name: Testing
         uses: trunk-io/breakpoint@v1
