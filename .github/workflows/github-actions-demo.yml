@@ -16,6 +16,8 @@ jobs:
 
       - name: Testing
         uses: trunk-io/breakpoint@v1
+        env:
+          TRUNK_API_ADDRESS: api.trunk-staging.io:8443
         with:
           breakpoint_id: unit-tests
           command: ./run_tests.sh
