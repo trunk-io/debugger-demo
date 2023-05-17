@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 
-echo "Sleeping 5 seconds"
-sleep 5
-echo "Exiting with error"
+COUNT=10
+while [ $COUNT -gt 0 ]; do
+    echo $COUNT
+    let COUNT=COUNT-1
+done
+echo "Exiting with error 3"
 exit 3
