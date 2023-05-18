@@ -11,9 +11,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Add tools/ to path
-        run: echo "tools" >> $GITHUB_PATH
-
       - name: Install Trunk
         run: curl https://get.trunk.io -fsSL | bash
 
