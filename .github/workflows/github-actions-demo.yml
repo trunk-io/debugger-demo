@@ -18,7 +18,7 @@ jobs:
         uses: trunk-io/breakpoint@v1
         env:
           TRUNK_API_ADDRESS: api.trunk-staging.io:8443
-          TRUNK_CLI_VERSION: 1.9.2-beta.14
+          TRUNK_CLI_VERSION: 1.9.2-beta.19
         with:
           breakpoint_id: unit-tests
           command: ./run_tests.sh
