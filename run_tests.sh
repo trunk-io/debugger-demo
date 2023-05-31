@@ -6,5 +6,5 @@ while [ $COUNT -gt 0 ]; do
     sleep 0.5
     let COUNT=COUNT-1
 done
-echo "Exiting with error 3"
-exit 3
+echo "Test failed"
+exit 1
