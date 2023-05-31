@@ -15,4 +15,12 @@ jobs:
         run: curl https://get.trunk.io -fsSL | bash
 
       - name: Testing
-        run: ./run_tests.sh
+        uses: trunk-io/breakpoint@v1
+        env:
+          TRUNK_API_ADDRESS: api.trunk-staging.io:8443
+          TRUNK_CLI_VERSION: 1.10.1-beta.3
+        with:
+          breakpoint_id: run-test
+          command: ./run_tests.sh
+          trunk_token: ${{ secrets.INPUT_TRUNK_TOKEN }}
+
