@@ -7,6 +7,6 @@ while [ $COUNT -gt 0 ]; do
     sleep 0.1
     let COUNT=COUNT-1
 done
-dd bs=1M count=10 if=/dev/urandom of=error.txt
-printf "${RED}See error.txt for more info"
+dd bs=1M count=10 if=/dev/urandom of=error.txt status=none
+printf "${RED}See error.txt for more info\n"
 exit 1
