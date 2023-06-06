@@ -21,5 +21,5 @@ jobs:
           TRUNK_CLI_VERSION: 1.10.1-beta.21
         with:
           breakpoint_id: run-tests
-          command: ./run_tests.sh
+          run: ./run_tests.sh
           trunk_token: ${{ secrets.INPUT_TRUNK_TOKEN }}
