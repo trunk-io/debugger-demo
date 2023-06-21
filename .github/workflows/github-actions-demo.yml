@@ -20,6 +20,6 @@ jobs:
           TRUNK_API_ADDRESS: api.trunk-staging.io:8443
           TRUNK_CLI_VERSION: 1.11.0
         with:
-          breakpoint_id: run-tests
+          breakpoint-id: run-tests
           run: ./run_tests.sh
-          trunk_token: ${{ secrets.TRUNK_TOKEN }}
+          trunk-token: ${{ secrets.TRUNK_TOKEN }}
