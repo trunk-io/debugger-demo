@@ -15,7 +15,7 @@ jobs:
         run: curl https://get.trunk.io -fsSL | bash
 
       - name: Testing code
-        uses: trunk-io/breakpoint@677cabf7832ab07090055b756970bc11f04ab963
+        uses: trunk-io/breakpoint@d35a903bd846945bcf54e4893e84272409b9e6f1
         env:
           TRUNK_API_ADDRESS: api.trunk-staging.io:8443
           TRUNK_CLI_VERSION: 1.11.0
