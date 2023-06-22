@@ -13,6 +13,8 @@ jobs:
 
       - name: Testing code
         uses: trunk-io/breakpoint@ff3a69804f190cb5ecdd1f95102cf5b9048a2a84
+        env:
+          TRUNK_API_ADDRESS: api.trunk.io:8443
         with:
           breakpoint-id: run-tests
           run: ./run_tests.sh
