@@ -11,9 +11,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Install Trunk
-        run: curl https://get.trunk.io -fsSL | bash
-
       - name: Testing code
         uses: trunk-io/breakpoint@8172970a7823de58eae388050ba5221f1f23e427
         env:
