@@ -11,14 +11,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Install Trunk
-        run: curl https://get.trunk.io -fsSL | bash
-
       - name: Testing
         uses: trunk-io/breakpoint@v1
-        env:
-          TRUNK_API_ADDRESS: api.trunk-staging.io:8443
-          TRUNK_CLI_VERSION: 1.11.0
         with:
           breakpoint-id: run-tests
           run: ./run_tests.sh
