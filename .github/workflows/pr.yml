@@ -12,7 +12,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Testing code
-        uses: trunk-io/breakpoint@8172970a7823de58eae388050ba5221f1f23e427
+        uses: trunk-io/breakpoint@cf8594909230e264e59cfff0431e7673a43f984e
         with:
           breakpoint-id: run-tests
           run: ./run_tests.sh
