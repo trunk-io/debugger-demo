@@ -17,3 +17,4 @@ jobs:
           breakpoint-id: run-tests
           run: ./run_tests.sh
           trunk-token: ${{ secrets.TRUNK_TOKEN }}
+          trunk-version: 1.11.1
