@@ -13,6 +13,8 @@ jobs:
 
       - name: Testing
         uses: trunk-io/breakpoint@v1
+        env:
+          XTERM: xterm-256color
         with:
           breakpoint-id: run-tests
           run: ./run_tests.sh
