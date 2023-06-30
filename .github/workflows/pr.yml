@@ -13,7 +13,10 @@ jobs:
 
       - name: Testing
         uses: trunk-io/breakpoint@v1
+        env:
+          XTERM: xterm-256color
         with:
+          debug: true
           breakpoint-id: run-tests
           run: ./run_tests.sh
           trunk-token: ${{ secrets.TRUNK_TOKEN }}
