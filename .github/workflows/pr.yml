@@ -16,5 +16,5 @@ jobs:
         with:
           breakpoint-id: run-tests
           run: ./run_tests.sh
-          trunk-token: ${{ secrets.TRUNK_TOKEN }}
+          trunk-token: ${{ secrets.TRUNK_DEBUGGER_TOKEN }}
           org: trunk
