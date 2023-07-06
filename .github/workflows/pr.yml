@@ -18,4 +18,5 @@ jobs:
           run: ./run_tests.sh
           trunk-token: ${{ secrets.TRUNK_DEBUGGER_TOKEN }}
           org: trunk
+          trunk-version: 1.11.2-beta.33
 
