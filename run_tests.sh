@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 RED='\033[0;31m'
-COUNT=10
+COUNT=15
 while [ $COUNT -gt 0 ]; do
     printf "$COUNT "
     sleep 0.1
