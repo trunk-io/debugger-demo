@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 RED='\033[0;31m'
-COUNT=20
+COUNT=22
 while [ $COUNT -gt 0 ]; do
     printf "$COUNT "
     sleep 0.1
