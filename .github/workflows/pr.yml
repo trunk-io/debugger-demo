@@ -19,3 +19,4 @@ jobs:
           trunk-token: ${{ secrets.TRUNK_DEBUGGER_TOKEN }}
           org: trunk
           trunk-version: 1.16.2
+          debug: true
