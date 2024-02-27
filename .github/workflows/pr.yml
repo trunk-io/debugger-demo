@@ -8,6 +8,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Setup trunk
+        uses: trunk-io/trunk-action/setup@c368dc0c57ec3eb9a03b8db7fe4f61d8d13eb999
+
       - name: Checkout
         uses: actions/checkout@v2
 
