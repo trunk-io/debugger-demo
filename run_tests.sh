@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
 RED='\033[0;31m'
+CLEAR='\033[0m'
+
 COUNT=10
 while [ $COUNT -gt 0 ]; do
     printf "$COUNT "
@@ -9,5 +11,5 @@ while [ $COUNT -gt 0 ]; do
 done
 printf "\nINFO: Test completed, 1 test FAILED, 10 total actions\n"
 dd bs=1M count=10 if=/dev/urandom of=error.txt status=none
-printf "${RED}See error.txt for more info\n"
+printf "See ${RED}error.txt${CLEAR} for more info\n"
 exit 1
