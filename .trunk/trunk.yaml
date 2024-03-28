@@ -8,9 +8,9 @@ plugins:
       uri: https://github.com/trunk-io/plugins
 lint:
   enabled:
-    - checkov@3.2.43
-    - trivy@0.50.0
-    - trufflehog@3.70.3
+    - checkov@3.2.47
+    - trivy@0.50.1
+    - trufflehog@3.71.0
     - actionlint@1.6.27
     - git-diff-check
     - gitleaks@8.18.2
